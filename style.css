@@ -1,64 +1,112 @@
+:root {
+    --bg-beige: #f3f0e9;
+    --dark: #121212;
+    --accent: #ff6b00;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    background-color: #222; /* Dark desk background */
-    background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-beige);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+nav {
     display: flex;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-.scrapbook-container {
-    width: 90%;
-    max-width: 1000px;
-    position: relative;
-}
-
-.paper-piece {
-    background: #e4e4e4;
-    padding: 20px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    justify-content: space-between;
+    padding: 30px 5%;
+    align-items: center;
     position: absolute;
-    transition: transform 0.3s ease;
-}
-
-/* Positioning like your image */
-.id-card {
-    top: 0; left: 0;
-    width: 300px;
-    transform: rotate(-2deg);
-}
-
-.profile-img {
     width: 100%;
-    filter: grayscale(100%);
+    z-index: 10;
 }
 
-.watch-section {
-    top: 350px; left: 50px;
-    width: 250px;
-    background: #111;
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.nav-cv {
+    background: var(--dark);
     color: white;
-    border-radius: 30px;
-    padding: 30px;
-    transform: rotate(2deg);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
-.experience-receipt {
-    top: 20px; right: 0;
-    width: 350px;
-    background: #fdfdfd;
-    font-family: 'Courier New', Courier, monospace;
-    transform: rotate(1deg);
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 100px;
 }
 
-.footer-tape {
-    bottom: -600px; left: 20%;
-    background: #d4a373; /* Tape color */
-    padding: 10px 40px;
-    transform: rotate(-1deg);
+.hero-text h1 {
+    font-size: clamp(4rem, 15vw, 12rem);
+    font-weight: 900;
+    line-height: 0.8;
+    z-index: 1;
+    text-transform: uppercase;
 }
 
-/* Hover effect to make it feel like real paper */
-.paper-piece:hover {
-    transform: scale(1.05) rotate(0deg);
-    z-index: 100;
+.outline {
+    -webkit-text-stroke: 2px var(--dark);
+    color: transparent;
+}
+
+.hero-img {
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    /* Optional: filter: grayscale(100%); if you want the black/white look */
+}
+
+.about-section {
+    background: var(--dark);
+    color: white;
+    padding: 150px 10%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hello { color: #666; letter-spacing: 5px; font-weight: bold; margin-bottom: 10px; }
+
+.description {
+    max-width: 600px;
+    margin: 20px 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #eee;
+}
+
+.stats { display: flex; gap: 50px; margin-top: 60px; }
+
+.stat-item strong {
+    font-size: 2.5rem;
+    display: block;
+    color: var(--accent);
+    margin-bottom: 5px;
+}
+
+.social-side a {
+    color: white;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
