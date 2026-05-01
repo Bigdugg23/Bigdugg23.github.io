@@ -3,47 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Portfolio</title>
+<title>Phetho Tsoeu | Portfolio</title>
 
 <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- NAV -->
 <nav>
-    <h1>YN</h1>
+    <h1>PT</h1>
     <div>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="#about">about</a>
+        <a href="#projects">portfolio</a>
+        <a href="#contact">contact</a>
+    </div>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/bigduggmustfall/" target="_blank">IG</a>
+        <a href="https://www.linkedin.com/in/phetho-tsoeu-536b01363/" target="_blank">IN</a>
+        <a href="https://za.pinterest.com/phethotsoeu/" target="_blank">PT</a>
     </div>
 </nav>
 
-<!-- HERO SPLIT -->
+<!-- HERO -->
 <section class="hero">
 
-    <!-- LEFT -->
     <div class="left">
         <h1>designer</h1>
-        <p>UI/UX focused, clean and aesthetic design.</p>
+        <p>Creative thinker with an eye for clean UI and strong visual identity.</p>
     </div>
 
-    <!-- IMAGE -->
     <div class="center-img">
-        <img src="yourphoto.jpg" alt="Your Photo">
+        <img src="IMG_7796.jpeg" alt="Phetho">
     </div>
 
-    <!-- RIGHT -->
     <div class="right">
         <h1>&lt;coder&gt;</h1>
-        <p>Building efficient, scalable and clean code.</p>
+        <p>Computer Information Systems student building efficient, scalable systems.</p>
     </div>
 
 </section>
 
-<script src="script.js"></script>
+<!-- ABOUT -->
+<section id="about" class="fade">
+    <h2>About Me</h2>
+    <p>
+        I’m Phetho Tsoeu, a North-West University Information Technology student with strong programming and networking skills. 
+        I combine technical knowledge with creativity and leadership experience, aiming to build impactful digital solutions.
+    </p>
+</section>
 
+<!-- PROJECTS -->
+<section id="projects" class="fade">
+    <h2>Portfolio</h2>
+
+    <div class="project">
+        <h3>Hangman Game</h3>
+        <p>Java-based game using custom data structures.</p>
+    </div>
+
+    <div class="project">
+        <h3>Drivers Licence System</h3>
+        <p>C++ system for managing candidate results.</p>
+    </div>
+
+    <div class="project">
+        <h3>Network Design</h3>
+        <p>VLAN-based network built using Cisco Packet Tracer.</p>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade">
+    <h2>Contact</h2>
+    <p>Email: phethotsoeu@gmail.com</p>
+</section>
+
+<footer>
+    © 2026 Phetho Tsoeu
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
