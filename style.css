@@ -1,128 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f2f2f2;
-    color: #111;
-}
-
-/* NAV */
-nav {
+    background-color: #222; /* Dark desk background */
+    background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background: black;
-    color: white;
+    justify-content: center;
+    padding: 50px 0;
 }
 
-nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
-
-.socials a {
-    margin-left: 10px;
-    font-size: 12px;
-}
-
-/* HERO */
-.hero {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: space-between;
+.scrapbook-container {
+    width: 90%;
+    max-width: 1000px;
     position: relative;
 }
 
-/* LEFT */
-.left {
-    width: 35%;
-    padding-left: 10%;
-}
-
-.left h1 {
-    font-size: 60px;
-    font-weight: 800;
-}
-
-.left p {
-    color: #555;
-}
-
-/* RIGHT */
-.right {
-    width: 35%;
-    text-align: right;
-    padding-right: 10%;
-}
-
-.right h1 {
-    font-size: 60px;
-    font-weight: 800;
-}
-
-/* CENTER IMAGE */
-.center-img {
+.paper-piece {
+    background: #e4e4e4;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    transition: transform 0.3s ease;
 }
 
-.center-img img {
-    width: 320px;
-    transition: 0.4s;
-    clip-path: inset(0 50% 0 0);
+/* Positioning like your image */
+.id-card {
+    top: 0; left: 0;
+    width: 300px;
+    transform: rotate(-2deg);
 }
 
-.center-img img:hover {
-    clip-path: inset(0 0 0 0);
-    transform: scale(1.05);
+.profile-img {
+    width: 100%;
+    filter: grayscale(100%);
 }
 
-/* SECTIONS */
-section {
-    padding: 60px 10%;
+.watch-section {
+    top: 350px; left: 50px;
+    width: 250px;
+    background: #111;
+    color: white;
+    border-radius: 30px;
+    padding: 30px;
+    transform: rotate(2deg);
 }
 
-h2 {
-    margin-bottom: 20px;
+.experience-receipt {
+    top: 20px; right: 0;
+    width: 350px;
+    background: #fdfdfd;
+    font-family: 'Courier New', Courier, monospace;
+    transform: rotate(1deg);
 }
 
-/* PROJECTS */
-.project {
-    background: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    transition: 0.3s;
+.footer-tape {
+    bottom: -600px; left: 20%;
+    background: #d4a373; /* Tape color */
+    padding: 10px 40px;
+    transform: rotate(-1deg);
 }
 
-.project:hover {
-    transform: translateY(-5px);
-}
-
-/* FADE */
-.fade {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.8s;
-}
-
-.fade.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #666;
+/* Hover effect to make it feel like real paper */
+.paper-piece:hover {
+    transform: scale(1.05) rotate(0deg);
+    z-index: 100;
 }
