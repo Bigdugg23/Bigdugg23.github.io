@@ -1,27 +1,9 @@
-// TYPING EFFECT
-const text = "Hi, I'm Your Name";
-let i = 0;
+// slight movement effect
+document.addEventListener("mousemove", (e) => {
+    const img = document.querySelector(".center-img img");
 
-function typing() {
-    if (i < text.length) {
-        document.querySelector(".typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typing, 60);
-    }
-}
-typing();
+    let x = (window.innerWidth / 2 - e.pageX) / 40;
+    let y = (window.innerHeight / 2 - e.pageY) / 40;
 
-
-// FADE-IN ON SCROLL
-const elements = document.querySelectorAll(".fade-in");
-
-function showOnScroll() {
-    elements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 50) {
-            el.classList.add("show");
-        }
-    });
-}
-
-window.addEventListener("scroll", showOnScroll);
+    img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+});
