@@ -1,3 +1,4 @@
+/* style.css - EMERGENCY FIX */
 :root {
     --bg-beige: #f3f0e9;
     --dark: #121212;
@@ -10,103 +11,52 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-beige);
     color: var(--dark);
-    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
 }
 
+/* Fix the navigation crowding */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 30px 5%;
     align-items: center;
-    position: absolute;
+    padding: 20px 5%;
     width: 100%;
-    z-index: 10;
+    background: var(--bg-beige);
 }
 
-.nav-links a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 700;
-    font-size: 0.9rem;
-}
-
-.nav-cv {
-    background: var(--dark);
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
+/* Fix the Hero section overlapping */
 .hero {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 80vh;
+    text-align: center;
     position: relative;
-    padding-top: 100px;
+    padding: 50px 0;
 }
 
 .hero-text h1 {
-    font-size: clamp(4rem, 15vw, 12rem);
+    font-size: clamp(3rem, 10vw, 8rem);
     font-weight: 900;
-    line-height: 0.8;
-    z-index: 1;
-    text-transform: uppercase;
-}
-
-.outline {
-    -webkit-text-stroke: 2px var(--dark);
-    color: transparent;
+    z-index: 5;
+    position: relative;
+    line-height: 1;
 }
 
 .hero-img {
-    height: 80%;
-    position: absolute;
-    bottom: 0;
+    max-width: 80%;
+    height: auto;
+    max-height: 600px;
+    margin-top: -50px; /* Pulls image slightly up behind text */
     z-index: 2;
-    /* Optional: filter: grayscale(100%); if you want the black/white look */
 }
 
+/* Fix the dark section at the bottom */
 .about-section {
     background: var(--dark);
     color: white;
-    padding: 150px 10%;
-}
-
-.about-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.hello { color: #666; letter-spacing: 5px; font-weight: bold; margin-bottom: 10px; }
-
-.description {
-    max-width: 600px;
-    margin: 20px 0;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: #eee;
-}
-
-.stats { display: flex; gap: 50px; margin-top: 60px; }
-
-.stat-item strong {
-    font-size: 2.5rem;
-    display: block;
-    color: var(--accent);
-    margin-bottom: 5px;
-}
-
-.social-side a {
-    color: white;
-    text-decoration: none;
-    writing-mode: vertical-rl;
-    font-weight: bold;
-    letter-spacing: 2px;
+    padding: 80px 10%;
+    width: 100%;
 }
