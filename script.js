@@ -5,11 +5,11 @@ const cvData = {
     personal: {
         name: "Phetho Tsoeu",
         title: "Information Technology Student",
-        email: "phethotoseu@gmail.com",
-        phone: "+06188265540",
-        address: "0988 Sudan Street Germiston, Katlehong South, 1431",
-        linkedin: "www.linkedin.com/in/photho-tsoeu-538b01363",
-        instagram: "www.instagram.com/bjgdubg23",
+        email: "phethotoseu1@gmail.com",
+        phone: "0682555140",
+        address: "1988 Sudan Street Germiston, Katlehong South, 1431",
+        linkedin: "www.linkedin.com/in/phetho-tsoeu-536b01363",
+        instagram: "www.instagram.com/Bigdugg23",
         gpa: "61.29",
         graduation: "2026"
     },
@@ -32,7 +32,7 @@ const cvData = {
     experience: [
         {
             title: "Brand Ambassador",
-            company: "Frenzyz Clothing",
+            company: "Frenzyy Clothing",
             period: "March 2025",
             responsibilities: [
                 "Represented and promoted the Frenzyz brand across various platforms",
