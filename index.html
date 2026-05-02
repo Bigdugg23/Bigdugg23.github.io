@@ -2,55 +2,350 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phetho Tsoeu | IT Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Phetho Tsoeu · Elite IT Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Importing a cleaner, bold font to match the theme better -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <nav>
-        <div class="logo">Bigdugg23</div>
-        
-        <!-- All Socials are now grouped here -->
-        <div class="nav-links">
-            <a href="https://www.linkedin.com/in/phetho-tsoeu-536b01363/" target="_blank">LinkedIn</a>
-            <a href="https://za.pinterest.com/phethotsoeu/" target="_blank">Pinterest</a>
-            <a href="https://www.instagram.com/bigduggmustfall/" target="_blank">Instagram</a>
+    <!-- Premium Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">PT</span>
+                <span class="logo-dot"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="darkModeToggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun" style="display: none;"></i>
+            </button>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        
-        <a href="Phetho Tsoeu.png" download="Phetho_Tsoeu_CV" class="nav-cv">DOWNLOAD CV</a>
     </nav>
 
-    <header class="hero">
-        <div class="hero-text">
-            <h1>I'M AN IT <br> <span class="outline">SPECIALIST</span></h1>
-        </div>
-        
-        <!-- THE IMAGE LINE: This is crucial -->
-        <img src="IMG_7796.jpeg" alt="Phetho Tsoeu" class="hero-img">
-    </header>
-
-    <section class="about-section">
-        <div class="about-container">
-            <div class="about-info">
-                <p class="hello">HELLO</p>
-                <h2>I'M PHETHO</h2>
-                <p class="description">
-                    A dedicated North-West University IT student with a strong academic record. 
-                    I specialize in building robust software solutions.
-                </p>
-                
-                <div class="stats">
-                    <div class="stat-item"><strong>61.29</strong> GPA</div>
-                    <div class="stat-item"><strong>Python</strong> Expertise</div>
-                    <div class="stat-item"><strong>Java</strong> Proficient</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">IT Student & Brand Ambassador</div>
+                    <h1 class="hero-title">
+                        Phetho <span class="highlight">Tsoeu</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Information Technology student at North-West University with a passion for programming, 
+                        leadership, and creative problem-solving. 61.29 GPA · Volleyball Captain · Brand Ambassador.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get in touch <i class="fas fa-arrow-right"></i></a>
+                        <a href="#experience" class="btn-secondary">View experience <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">2026</span>
+                            <span class="stat-label">Expected Graduation</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">61.29</span>
+                            <span class="stat-label">Current GPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Programming Languages</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="Phetho Tsoeu.png" alt="Phetho Tsoeu" onerror="this.src='https://placehold.co/500x600/1e2f3e/ffffff?text=P+T'">
+                        <div class="image-glow"></div>
+                    </div>
                 </div>
             </div>
-            <!-- The old social-side link was removed from here -->
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">Dedicated & <span class="highlight">Dynamic</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Academic Excellence</h3>
+                    <p>Strong academic record (61.29 GPA) at North-West University with well-developed technical skills in programming, database management, and system analysis.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-volleyball-ball"></i>
+                    <h3>Leadership</h3>
+                    <p>Demonstrated leadership as volleyball team captain, leading to tournament victory in 2024. Built strategic planning and team coordination skills.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Marketing Expertise</h3>
+                    <p>Brand Ambassador for Frenzyz Clothing with proven promotional abilities and customer engagement strategies across various platforms.</p>
+                </div>
+            </div>
+            <div class="about-bio">
+                <p>A dedicated Information Technology student who combines technical expertise with marketing experience and team leadership skills. Fluent in multiple South African languages with strong communication abilities. Always eager to learn, adapt, and contribute to meaningful projects that bridge technology and community engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Professional Journey</span>
+                <h2 class="section-title">Work & <span class="highlight">Leadership</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Brand Ambassador</h3>
+                            <span class="company">Frenzyz Clothing</span>
+                        </div>
+                        <ul>
+                            <li>Represented and promoted the Frenzyz brand across various digital and physical platforms</li>
+                            <li>Engaged with customers and built authentic brand awareness in competitive markets</li>
+                            <li>Demonstrated strong communication, marketing, and promotional skills</li>
+                            <li>Increased brand visibility through strategic engagement campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023-2024</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Volleyball Team Captain</h3>
+                            <span class="company">NWU Volleyball Club</span>
+                        </div>
+                        <ul>
+                            <li>Led team to tournament victory in 2024 as Captain</li>
+                            <li>Developed leadership, strategic planning, and team coordination skills</li>
+                            <li>Previously served as Opponent in 2023, understanding game dynamics deeply</li>
+                            <li>Fostered competitive excellence and team spirit</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017-2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Matriculation</h3>
+                            <span class="company">Phumulani Secondary School</span>
+                        </div>
+                        <ul>
+                            <li>Completed secondary education with strong foundation</li>
+                            <li>Active in sports and extracurricular activities</li>
+                            <li>Developed discipline and teamwork fundamentals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Technical & <span class="highlight">Professional</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Structured Programming</span>
+                        <span class="skill-badge">Object-Oriented Programming</span>
+                        <span class="skill-badge">Database Management</span>
+                        <span class="skill-badge">System Analysis & Design</span>
+                        <span class="skill-badge">Data Structures & Algorithms</span>
+                        <span class="skill-badge">Information Security</span>
+                        <span class="skill-badge">Application Development</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-users"></i> Professional Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Leadership</span>
+                        <span class="skill-badge">Teamwork & Collaboration</span>
+                        <span class="skill-badge">Marketing & Promotion</span>
+                        <span class="skill-badge">Customer Engagement</span>
+                        <span class="skill-badge">Problem-solving</span>
+                        <span class="skill-badge">Flexible & Adaptable</span>
+                        <span class="skill-badge">Friendly, Positive Attitude</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">English (Native)</span>
+                        <span class="skill-badge">Arabic (Fluent)</span>
+                        <span class="skill-badge">Sesotho (Advanced)</span>
+                        <span class="skill-badge">isiZulu (Advanced)</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Microsoft Word</span>
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Physical Fitness</span>
+                        <span class="skill-badge">Manual Labour Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Beyond Tech</span>
+                <h2 class="section-title">Passions & <span class="highlight">Hobbies</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-volleyball-ball"></i>
+                    <h3>Volleyball</h3>
+                    <p>Team Captain leading to 2024 tournament victory</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-futbol"></i>
+                    <h3>Soccer</h3>
+                    <p>Regular play developing teamwork & discipline</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-basketball-ball"></i>
+                    <h3>Basketball</h3>
+                    <p>Quick decision-making & perseverance</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                    <h3>DIY & Maintenance</h3>
+                    <p>Hands-on problem solving</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-shoe-prints"></i>
+                    <h3>Sneaker Collecting</h3>
+                    <p>Attention to detail & design appreciation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+06188265540">+061 882 6554 0</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:phethotoseu@gmail.com">phethotoseu@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>0988 Sudan Street, Germiston<br>Katlehong South, 1431</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/bjgdubg23" target="_blank">@bjgdubg23</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/photho-tsoeu-538b01363" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">PT</span>
+                    <p>Information Technology Student<br>North-West University</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/bjgdubg23" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/photho-tsoeu-538b01363" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Bigdugg23" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Phetho Tsoeu. All rights reserved. Built with <i class="fas fa-heart"></i> for excellence.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
