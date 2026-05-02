@@ -23,10 +23,16 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="theme-toggle" id="darkModeToggle">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun" style="display: none;"></i>
-            </button>
+            <div class="nav-actions">
+                <button class="download-cv-btn" id="downloadCVBtn">
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </button>
+                <button class="theme-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun" style="display: none;"></i>
+                </button>
+            </div>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -45,11 +51,14 @@
                     </h1>
                     <p class="hero-subtitle">
                         Information Technology student at North-West University with a passion for programming, 
-                        leadership, and creative problem-solving. 61.29 GPA · Volleyball Captain · Brand Ambassador.
+                        leadership, and creative problem-solving.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn-primary">Get in touch <i class="fas fa-arrow-right"></i></a>
-                        <a href="#experience" class="btn-secondary">View experience <i class="fas fa-chevron-down"></i></a>
+                        <button class="btn-primary" id="heroDownloadBtn">
+                            <i class="fas fa-file-pdf"></i>
+                            Download CV (PDF)
+                        </button>
+                        <a href="#contact" class="btn-secondary">Get in touch <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat">
