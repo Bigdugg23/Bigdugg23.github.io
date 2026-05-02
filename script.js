@@ -9,9 +9,9 @@ const cvData = {
         phone: "0682555140",
         address: "1988 Sudan Street Germiston, Katlehong South, 1431",
         linkedin: "www.linkedin.com/in/phetho-tsoeu-536b01363",
-        instagram: "www.instagram.com/Bigdugg23",
+        instagram: "www.instagram.com/bigduggmustfall",
         gpa: "61.29",
-        graduation: "2026"
+        graduation: "2027"
     },
     education: [
         {
