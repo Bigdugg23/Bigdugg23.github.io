@@ -7,13 +7,13 @@ const cvData = {
         title: "Aspiring Data Analyst | Front-End Developer",
         email: "phethotsoeu1@gmail.com",
         phone: "+27 68 255 5140",
-        address: "Katlehong South, Gauteng, South Africa",
+        address: "1998 Sudan Street, Katlehong South, Gauteng, South Africa",
         license: "Code 10 (C1) Driver's Licence",
         github: "https://github.com/Bigdugg23",
         portfolio: "https://bigdugg23.github.io",
         linkedin: "https://www.linkedin.com/in/phetho-tsoeu-536b01363/",
         gpa: "63.46%",
-        graduation: "2023 - Present (Final Year)"
+        graduation: "2023 - 2026"
     },
     summary: "Final-year Bachelor of Science in Information Technology student at North-West University with a strong interest in Data Analytics and Front-End Development. Passionate about turning raw data into meaningful insights and building intuitive, responsive web applications. Skilled in Python, SQL, Power BI, Tableau, Java, C#, C++, HTML, CSS, and Git/GitHub, with a solid academic foundation in databases, artificial intelligence, decision support systems, and computer networks. Seeking an internship or graduate opportunity where I can contribute analytical thinking, technical skills, and a commitment to continuous learning.",
     education: [
