@@ -4,61 +4,68 @@
 const cvData = {
     personal: {
         name: "Phetho Tsoeu",
-        title: "Information Technology Student",
-        email: "phethotoseu1@gmail.com",
-        phone: "0682555140",
-        address: "1988 Sudan Street Germiston, Katlehong South, 1431",
-        linkedin: "www.linkedin.com/in/phetho-tsoeu-536b01363",
-        instagram: "www.instagram.com/bigduggmustfall",
-        gpa: "61.29",
-        graduation: "2027"
+        title: "Aspiring Data Analyst | Front-End Developer",
+        email: "phethotsoeu1@gmail.com",
+        phone: "+27 68 255 5140",
+        address: "Katlehong South, Gauteng, South Africa",
+        license: "Code 10 (C1) Driver's Licence",
+        github: "https://github.com/Bigdugg23",
+        portfolio: "https://bigdugg23.github.io",
+        linkedin: "https://www.linkedin.com/in/phetho-tsoeu-536b01363/",
+        gpa: "63.46%",
+        graduation: "2023 - Present (Final Year)"
     },
+    summary: "Final-year Bachelor of Science in Information Technology student at North-West University with a strong interest in Data Analytics and Front-End Development. Passionate about turning raw data into meaningful insights and building intuitive, responsive web applications. Skilled in Python, SQL, Power BI, Tableau, Java, C#, C++, HTML, CSS, and Git/GitHub, with a solid academic foundation in databases, artificial intelligence, decision support systems, and computer networks. Seeking an internship or graduate opportunity where I can contribute analytical thinking, technical skills, and a commitment to continuous learning.",
     education: [
         {
-            degree: "Bachelor of Information Technology",
-            institution: "North-West University (NWU VPC Campus)",
-            location: "Vanderbijlpark",
-            period: "Expected 2026",
-            details: "Building 24, Hendrik van Eck Boulevard, Vanderbijlpark 5900"
+            degree: "Bachelor of Science in Information Technology",
+            institution: "North-West University",
+            location: "",
+            period: "2023 - Present",
+            details: "Current Qualification GPA: 63.46%",
+            coursework: ["Artificial Intelligence", "Data Analytics", "Decision Support Systems", "Databases & Advanced Databases", "Data Structures & Algorithms", "Object-Oriented Programming", "Information Security", "Computer Networks", "System Analysis & Design", "User Interface Programming"]
+        }
+    ],
+    skills: {
+        programming: ["Python", "Java", "C#", "C++", "HTML5", "CSS3", "JavaScript (Learning)"],
+        dataAnalytics: ["SQL", "Microsoft Excel", "Power BI", "Tableau", "Apache Kafka", "Data Cleaning", "Data Visualisation", "Dashboard Development", "Database Design", "Business Intelligence Fundamentals"],
+        frontEnd: ["HTML5", "CSS3", "Responsive Web Design", "Git", "GitHub"],
+        tools: ["Visual Studio Code", "Visual Studio", "Cisco Packet Tracer", "GitHub Pages"]
+    },
+    projects: [
+        {
+            title: "Personal Portfolio Website",
+            description: "Developed and deployed a responsive personal portfolio website to showcase projects, technical skills, and professional experience.",
+            technologies: "HTML, CSS, GitHub Pages"
         },
         {
-            degree: "Matriculation",
-            institution: "Phumulani Secondary School",
-            location: "Katlehong",
-            period: "2017-2021",
-            details: "4th, Moloena, Katlehong, 1432"
+            title: "Enterprise Network Design",
+            description: "Designed and configured a secure enterprise network using Cisco Packet Tracer, implementing VLANs, DHCP, routing, and access control lists (ACLs).",
+            technologies: "Cisco Packet Tracer"
+        },
+        {
+            title: "Database & Decision Support Projects",
+            description: "Designed relational databases, developed SQL queries, and applied decision support techniques to analyse business problems and support data-driven decisions.",
+            technologies: "SQL, Database Design"
         }
     ],
     experience: [
         {
             title: "Brand Ambassador",
-            company: "Frenzyy Clothing",
-            period: "March 2025",
+            company: "Frenzyy Clothing Brand",
+            period: "",
             responsibilities: [
-                "Represented and promoted the Frenzyz brand across various platforms",
-                "Engaged with customers and built brand awareness",
-                "Demonstrated strong communication and marketing skills"
-            ]
-        },
-        {
-            title: "Volleyball Team Captain",
-            company: "NWU Volleyball Club",
-            period: "2023-2024",
-            responsibilities: [
-                "Led team to tournament victory in 2024",
-                "Developed leadership, strategic planning, and team coordination skills",
-                "Previously served as Opponent in 2023"
+                "Represent the Frenzyy brand through promotional campaigns and community engagement",
+                "Promote products across digital and social platforms to increase brand awareness",
+                "Build relationships with customers and communicate the brand's values professionally",
+                "Support marketing initiatives and contribute ideas for brand growth"
             ]
         }
     ],
-    skills: {
-        technical: ["Structured Programming", "Object-Oriented Programming", "Database Management", "System Analysis & Design", "Data Structures & Algorithms", "Information Security"],
-        professional: ["Leadership", "Teamwork and collaboration", "Marketing & Promotion", "Customer Engagement", "Friendly, positive attitude", "Flexible and adaptable", "Problem-solving"],
-        tools: ["Microsoft Word", "Application Development"],
-        languages: ["English (Native)", "Arabic (Fluent)", "Sesotho (Advanced)", "isiZulu (Advanced)"]
-    },
-    interests: ["Sports & Fitness", "Volleyball (Team Captain)", "Soccer", "Basketball", "Maintenance and DIY", "Collecting Sneakers"],
-    about: "A dedicated North-West University Information Technology student with a strong academic record (61.29 GPA) and well-developed technical skills in programming. Demonstrated leadership as volleyball team captain and as a brand ambassador for Frenzyz. Fluent in multiple South African languages with strong communication and promotional abilities. Combines technical expertise with marketing experience and team leadership skills."
+    certifications: ["Introduction to Cybersecurity"],
+    softSkills: ["Data Analysis", "Analytical Thinking", "Problem Solving", "Communication", "Teamwork", "Leadership", "Adaptability", "Time Management"],
+    languages: ["Sesotho (Native)", "English (Professional)"],
+    additional: ["South African Citizen", "Code 10 (C1) Driver's Licence", "Available for internship and graduate opportunities"]
 };
 
 // Function to generate and download PDF
@@ -88,96 +95,140 @@ async function downloadCVAsPDF() {
         cvElement.innerHTML = `
             <style>
                 .cv-container { font-family: 'Inter', Arial, sans-serif; max-width: 800px; margin: 0 auto; }
-                .cv-header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #c7a05b; }
-                .cv-name { font-size: 32px; font-weight: 700; margin: 0 0 5px; color: #1e2f3e; }
-                .cv-title { font-size: 18px; color: #c7a05b; margin-bottom: 15px; }
-                .cv-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-size: 12px; color: #666; }
-                .cv-section { margin-bottom: 25px; }
-                .cv-section-title { font-size: 18px; font-weight: 600; color: #1e2f3e; border-left: 3px solid #c7a05b; padding-left: 12px; margin-bottom: 12px; }
-                .cv-about { font-size: 13px; line-height: 1.5; color: #444; margin-bottom: 20px; }
-                .cv-education-item, .cv-experience-item { margin-bottom: 15px; }
-                .cv-item-title { font-weight: 600; font-size: 14px; margin-bottom: 3px; }
-                .cv-item-subtitle { font-size: 12px; color: #c7a05b; margin-bottom: 5px; }
+                .cv-header { text-align: center; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 2px solid #c7a05b; }
+                .cv-name { font-size: 30px; font-weight: 700; margin: 0 0 5px; color: #1e2f3e; }
+                .cv-title { font-size: 16px; color: #c7a05b; margin-bottom: 12px; }
+                .cv-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; font-size: 11px; color: #666; }
+                .cv-section { margin-bottom: 20px; }
+                .cv-section-title { font-size: 16px; font-weight: 600; color: #1e2f3e; border-left: 3px solid #c7a05b; padding-left: 12px; margin-bottom: 10px; }
+                .cv-about { font-size: 12.5px; line-height: 1.55; color: #444; margin-bottom: 18px; }
+                .cv-education-item, .cv-experience-item, .cv-project-item { margin-bottom: 14px; }
+                .cv-item-title { font-weight: 600; font-size: 13.5px; margin-bottom: 3px; }
+                .cv-item-subtitle { font-size: 12px; color: #c7a05b; margin-bottom: 4px; }
                 .cv-item-date { font-size: 11px; color: #999; margin-bottom: 5px; }
                 .cv-item-desc { font-size: 12px; color: #555; margin-left: 15px; }
-                .cv-skills-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-                .cv-skill-tag { background: #f0f0f0; padding: 3px 10px; border-radius: 20px; font-size: 11px; }
-                .cv-interests { font-size: 12px; color: #555; }
-                hr { margin: 15px 0; border-color: #eee; }
+                .cv-item-plain-desc { font-size: 12px; color: #555; margin-left: 0; }
+                .cv-skills-grid { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 6px; }
+                .cv-skill-tag { background: #f0f0f0; padding: 3px 10px; border-radius: 20px; font-size: 10.5px; }
+                .cv-skills-subheading { font-size: 11.5px; font-weight: 600; color: #333; margin-top: 10px; margin-bottom: 2px; }
+                .cv-two-col { display: flex; gap: 24px; }
+                .cv-two-col > div { flex: 1; }
+                hr { margin: 12px 0; border-color: #eee; }
             </style>
             <div class="cv-container">
                 <div class="cv-header">
                     <h1 class="cv-name">${cvData.personal.name}</h1>
-                    <div class="cv-title">${cvData.personal.title} | GPA: ${cvData.personal.gpa}</div>
+                    <div class="cv-title">${cvData.personal.title}</div>
                     <div class="cv-contact">
-                        <span>📞 ${cvData.personal.phone}</span>
-                        <span>✉️ ${cvData.personal.email}</span>
                         <span>📍 ${cvData.personal.address}</span>
+                        <span>📞 ${cvData.personal.phone}</span>
+                        <span>📧 ${cvData.personal.email}</span>
+                        <span>🚗 ${cvData.personal.license}</span>
                     </div>
-                    <div class="cv-contact">
-                        <span>📷 ${cvData.personal.instagram}</span>
-                        <span>🔗 ${cvData.personal.linkedin}</span>
+                    <div class="cv-contact" style="margin-top: 6px;">
+                        <span>GitHub: ${cvData.personal.github}</span>
+                        <span>Portfolio: ${cvData.personal.portfolio}</span>
+                        <span>LinkedIn: ${cvData.personal.linkedin}</span>
                     </div>
                 </div>
-                
+
                 <div class="cv-section">
-                    <div class="cv-section-title">About Me</div>
-                    <div class="cv-about">${cvData.about}</div>
+                    <div class="cv-section-title">Professional Summary</div>
+                    <div class="cv-about">${cvData.summary}</div>
                 </div>
-                
+
                 <div class="cv-section">
                     <div class="cv-section-title">Education</div>
                     ${cvData.education.map(edu => `
                         <div class="cv-education-item">
-                            <div class="cv-item-title">${edu.degree}</div>
-                            <div class="cv-item-subtitle">${edu.institution}</div>
+                            <div class="cv-item-title">${edu.institution}</div>
+                            <div class="cv-item-subtitle">${edu.degree}</div>
                             <div class="cv-item-date">${edu.period}</div>
-                            <div class="cv-item-desc">${edu.details}</div>
+                            <div class="cv-item-plain-desc">${edu.details}</div>
+                            <div class="cv-skills-subheading">Relevant Coursework</div>
+                            <div class="cv-skills-grid">
+                                ${edu.coursework.map(c => `<span class="cv-skill-tag">${c}</span>`).join('')}
+                            </div>
                         </div>
                     `).join('')}
                 </div>
-                
+
+                <div class="cv-section">
+                    <div class="cv-section-title">Technical Skills</div>
+                    <div class="cv-skills-subheading">Programming</div>
+                    <div class="cv-skills-grid">
+                        ${cvData.skills.programming.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
+                    </div>
+                    <div class="cv-skills-subheading">Data Analytics & Business Intelligence</div>
+                    <div class="cv-skills-grid">
+                        ${cvData.skills.dataAnalytics.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
+                    </div>
+                    <div class="cv-skills-subheading">Front-End Development</div>
+                    <div class="cv-skills-grid">
+                        ${cvData.skills.frontEnd.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
+                    </div>
+                    <div class="cv-skills-subheading">Tools</div>
+                    <div class="cv-skills-grid">
+                        ${cvData.skills.tools.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <div class="cv-section-title">Projects</div>
+                    ${cvData.projects.map(p => `
+                        <div class="cv-project-item">
+                            <div class="cv-item-title">${p.title}</div>
+                            <div class="cv-item-plain-desc">${p.description}</div>
+                            <div class="cv-item-date">Technologies: ${p.technologies}</div>
+                        </div>
+                    `).join('')}
+                </div>
+
                 <div class="cv-section">
                     <div class="cv-section-title">Experience</div>
                     ${cvData.experience.map(exp => `
                         <div class="cv-experience-item">
                             <div class="cv-item-title">${exp.title} - ${exp.company}</div>
-                            <div class="cv-item-date">${exp.period}</div>
+                            ${exp.period ? `<div class="cv-item-date">${exp.period}</div>` : ''}
                             <ul class="cv-item-desc">
                                 ${exp.responsibilities.map(r => `<li>${r}</li>`).join('')}
                             </ul>
                         </div>
                     `).join('')}
                 </div>
-                
-                <div class="cv-section">
-                    <div class="cv-section-title">Technical Skills</div>
-                    <div class="cv-skills-grid">
-                        ${cvData.skills.technical.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
+
+                <div class="cv-two-col">
+                    <div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Certifications</div>
+                            <div class="cv-skills-grid">
+                                ${cvData.certifications.map(c => `<span class="cv-skill-tag">${c}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Languages</div>
+                            <div class="cv-skills-grid">
+                                ${cvData.languages.map(l => `<span class="cv-skill-tag">${l}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Soft Skills</div>
+                            <div class="cv-skills-grid">
+                                ${cvData.softSkills.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="cv-section">
-                    <div class="cv-section-title">Professional Skills</div>
-                    <div class="cv-skills-grid">
-                        ${cvData.skills.professional.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
-                    </div>
+                    <div class="cv-section-title">Additional Information</div>
+                    <div class="cv-item-plain-desc">${cvData.additional.join(' · ')}</div>
                 </div>
-                
-                <div class="cv-section">
-                    <div class="cv-section-title">Languages</div>
-                    <div class="cv-skills-grid">
-                        ${cvData.skills.languages.map(s => `<span class="cv-skill-tag">${s}</span>`).join('')}
-                    </div>
-                </div>
-                
-                <div class="cv-section">
-                    <div class="cv-section-title">Interests</div>
-                    <div class="cv-interests">${cvData.interests.join(' · ')}</div>
-                </div>
-                
+
                 <hr>
-                <div style="text-align: center; font-size: 10px; color: #999; margin-top: 20px;">
+                <div style="text-align: center; font-size: 10px; color: #999; margin-top: 16px;">
                     References available upon request | Updated: ${new Date().toLocaleDateString()}
                 </div>
             </div>
@@ -185,7 +236,7 @@ async function downloadCVAsPDF() {
         
         // PDF options
         const opt = {
-            margin: [0.5, 0.5, 0.5, 0.5],
+            margin: [0.4, 0.5, 0.4, 0.5],
             filename: `Phetho_Tsoeu_CV_${new Date().toISOString().slice(0, 10)}.pdf`,
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 2, useCORS: true, letterRendering: true },
