@@ -1,560 +1,466 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    
-    <!-- SEO Meta Tags -->
-    <title>Phetho Tsoeu · Elite Software Engineer & Creative Technologist</title>
-    <meta name="description" content="Portfolio of Phetho Tsoeu (Bigdugg23) - Final-Year BSc IT Student, Data Analyst, Front-End Engineer & Creative Technologist showcasing dynamic live GitHub projects.">
-    <meta name="keywords" content="Phetho Tsoeu, Bigdugg23, Software Engineer, Front-End Developer, Data Analyst, North-West University, Portfolio, HTML, CSS, JavaScript, SQL, Python">
-    <meta name="author" content="Phetho Tsoeu">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bigdugg23.github.io/">
-    <meta property="og:title" content="Phetho Tsoeu · Portfolio & GitHub Live Dashboard">
-    <meta property="og:description" content="Explore live GitHub repositories, dynamic analytics, interactive UI/UX, and engineering projects.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/Bigdugg23">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bigdugg23.github.io/">
-    <meta property="twitter:title" content="Phetho Tsoeu · Portfolio & GitHub Live Dashboard">
-    <meta property="twitter:description" content="Explore live GitHub repositories, dynamic analytics, interactive UI/UX, and engineering projects.">
-    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/Bigdugg23">
-
-    <!-- Preload & Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+    <title>Phetho Tsoeu · Elite IT Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body data-theme="nba">
-
-    <!-- Custom Glowing & Trailing Cursor -->
-    <div class="custom-cursor" id="cursor"></div>
-    <div class="custom-cursor-follower" id="cursorFollower"></div>
-
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-progress-container">
-        <div class="scroll-progress-bar" id="progressBar"></div>
-    </div>
-
-    <!-- AAA Game Loading Screen -->
-    <div id="loadingScreen" class="loading-screen">
-        <div class="loader-content">
-            <div class="loader-logo-wrap">
-                <span class="loader-badge">2K26 // PS5 UI</span>
-                <h1 class="loader-logo">BIGDUGG<span class="neon-dot">.</span></h1>
+<body>
+    <!-- Premium Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Duggio</span>
+                <span class="logo-dot"></span>
             </div>
-            <div class="loader-bar-bg">
-                <div class="loader-bar-fill" id="loaderFill"></div>
-            </div>
-            <div class="loader-status">
-                <span id="loaderStatusText">INITIALIZING GRAPHICS ENGINE...</span>
-                <span id="loaderPercent">0%</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Toast Notification Container -->
-    <div id="toastContainer" class="toast-container"></div>
-
-    <!-- Audio Toggle Button (Optional Ambient Sound FX Mock) -->
-    <button class="music-toggle-btn magnetic" id="musicToggleBtn" title="Toggle Sound FX (Mute/Unmute)" aria-label="Toggle Audio Effects">
-        <i class="fas fa-volume-up"></i>
-    </button>
-
-    <!-- Interactive Ambient Canvas Background -->
-    <canvas id="ambientCanvas" class="ambient-canvas"></canvas>
-    <div class="background-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
-
-    <!-- Floating Navigation Bar -->
-    <header class="navbar-wrapper">
-        <nav class="navbar glassmorphism" aria-label="Main Navigation">
-            <a href="#home" class="logo magnetic">
-                <span class="logo-text">BIGDUGG</span>
-                <span class="logo-status-dot"></span>
-            </a>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active magnetic"><i class="fas fa-house-user"></i> <span>Home</span></a></li>
-                <li><a href="#about" class="nav-link magnetic"><i class="fas fa-user-astronaut"></i> <span>About</span></a></li>
-                <li><a href="#github" class="nav-link magnetic"><i class="fab fa-github-alt"></i> <span>Dashboard</span></a></li>
-                <li><a href="#projects" class="nav-link magnetic"><i class="fas fa-gamepad"></i> <span>Projects</span></a></li>
-                <li><a href="#skills" class="nav-link magnetic"><i class="fas fa-microchip"></i> <span>Skills</span></a></li>
-                <li><a href="#timeline" class="nav-link magnetic"><i class="fas fa-stream"></i> <span>Timeline</span></a></li>
-                <li><a href="#contact" class="nav-link magnetic"><i class="fas fa-paper-plane"></i> <span>Contact</span></a></li>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-
             <div class="nav-actions">
-                <div class="theme-selector glassmorphism">
-                    <button class="theme-btn active magnetic" data-theme="nba" title="NBA 2K26 Mode"><i class="fas fa-bolt"></i> <span class="theme-label">NBA</span></button>
-                    <button class="theme-btn magnetic" data-theme="dark" title="Dark Mode"><i class="fas fa-moon"></i> <span class="theme-label">Dark</span></button>
-                    <button class="theme-btn magnetic" data-theme="light" title="Light Mode"><i class="fas fa-sun"></i> <span class="theme-label">Light</span></button>
-                </div>
-
-                <button class="mobile-menu-btn magnetic" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
-                    <i class="fas fa-bars"></i>
+                <button class="download-cv-btn" id="downloadCVBtn">
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </button>
+                <button class="theme-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun" style="display: none;"></i>
                 </button>
             </div>
-        </nav>
-    </header>
-
-    <main id="mainContent">
-
-        <!-- Full-Screen Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="hero-overlay-grid"></div>
-            <div class="hero-container">
-                <div class="hero-badge reveal-fade">
-                    <span class="pulse-indicator"></span> ONLINE & AVAILABLE FOR OPPORTUNITIES
-                </div>
-
-                <h1 class="hero-title reveal-slide-up">
-                    <span class="greeting">HELLO, I'M</span>
-                    <span class="name-highlight" id="animatedName">PHETHO TSOEU</span>
-                </h1>
-
-                <div class="rotating-titles-wrap reveal-slide-up">
-                    <span class="title-prefix">I AM A</span>
-                    <span class="rotating-title" id="rotatingTitle">Software Engineer</span>
-                </div>
-
-                <p class="hero-description reveal-slide-up">
-                    Final-Year BSc IT Student at North-West University. Transforming raw data into high-performance intelligence, crafting AAA web experiences, and architecting responsive digital interfaces.
-                </p>
-
-                <div class="hero-actions reveal-slide-up">
-                    <button class="btn btn-primary magnetic" id="downloadCVBtn">
-                        <i class="fas fa-file-download"></i> <span>Download CV</span>
-                    </button>
-                    <a href="#projects" class="btn btn-secondary magnetic">
-                        <i class="fas fa-rocket"></i> <span>Explore Work</span>
-                    </a>
-                    <button class="btn btn-ghost magnetic" id="copyEmailBtn" title="Copy Email">
-                        <i class="far fa-copy"></i> <span>Copy Email</span>
-                    </button>
-                </div>
-
-                <!-- Quick Stats Strip -->
-                <div class="hero-stats-strip glassmorphism reveal-scale">
-                    <div class="hero-stat-item">
-                        <div class="stat-value" data-target="63.46" id="statGpa">0%</div>
-                        <div class="stat-label">Academic GPA</div>
-                    </div>
-                    <div class="hero-stat-item">
-                        <div class="stat-value" id="heroRepoCount">--</div>
-                        <div class="stat-label">Live Repositories</div>
-                    </div>
-                    <div class="hero-stat-item">
-                        <div class="stat-value" id="visitorCountVal">1,024</div>
-                        <div class="stat-label">System Visitors</div>
-                    </div>
-                    <div class="hero-stat-item">
-                        <div class="stat-value">100%</div>
-                        <div class="stat-label">Sync Rate</div>
-                    </div>
-                </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
+        </div>
+    </nav>
 
-            <div class="hero-scroll-indicator">
-                <a href="#about" aria-label="Scroll down">
-                    <div class="mouse">
-                        <div class="wheel"></div>
-                    </div>
-                    <span>SCROLL TO EXPLORE</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section-padding">
-            <div class="container">
-                <div class="section-header reveal-fade">
-                    <span class="section-tag">// CHARACTER PROFILE</span>
-                    <h2 class="section-title">Dedicated & <span class="gradient-text">Dynamic Developer</span></h2>
-                    <p class="section-subtitle">Bridging Data Science, Front-End Craftsmanship, and Brand Strategy.</p>
-                </div>
-
-                <div class="about-grid">
-                    <div class="about-card glassmorphism tilt-card reveal-slide-left">
-                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Data Analytics</h3>
-                        <p>Specialized in SQL, Power BI, Tableau, and Excel. Proficient in transforming massive datasets into interactive dashboards, statistical insights, and strategic business intelligence.</p>
-                    </div>
-
-                    <div class="about-card glassmorphism tilt-card reveal-slide-up">
-                        <div class="card-icon"><i class="fas fa-code"></i></div>
-                        <h3>Front-End Engineering</h3>
-                        <p>Crafting sleek, responsive interfaces with pure HTML5, modern CSS3, and high-performance Vanilla JavaScript. Deep understanding of UI/UX design systems and animations.</p>
-                    </div>
-
-                    <div class="about-card glassmorphism tilt-card reveal-slide-right">
-                        <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
-                        <h3>Brand & Marketing Strategy</h3>
-                        <p>Official Brand Ambassador for Frenzyy Clothing. Experienced in driving digital engagement, social campaign management, product promotion, and audience growth.</p>
-                    </div>
-                </div>
-
-                <div class="about-bio-box glassmorphism reveal-scale">
-                    <div class="bio-header">
-                        <img id="aboutAvatar" src="https://avatars.githubusercontent.com/u/Bigdugg23" alt="Phetho Tsoeu Profile" class="bio-avatar">
-                        <div>
-                            <h3 id="aboutBioName">Phetho Tsoeu</h3>
-                            <p class="bio-tagline">BSc Information Technology Student · North-West University</p>
-                        </div>
-                    </div>
-                    <p class="bio-text" id="aboutBioText">
-                        Final-year Bachelor of Science in Information Technology student at North-West University with a strong passion for Data Analytics and Front-End Engineering. Adept at Python, SQL, Power BI, Tableau, Java, C#, C++, HTML, CSS, and Git/GitHub. Seeking opportunities to apply analytical thinking and modern software engineering skills to real-world challenges.
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero">
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">Aspiring Data Analyst &amp; Front-End Developer</div>
+                    <h1 class="hero-title">
+                        Phetho <span class="highlight">Tsoeu</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Final-year BSc Information Technology student at North-West University, passionate about turning raw data into meaningful insights and building intuitive, responsive web applications.
                     </p>
-                    
-                    <div class="interests-tags-wrap">
-                        <span class="interest-tag"><i class="fas fa-volleyball-ball"></i> Volleyball Captain (2024 Winners)</span>
-                        <span class="interest-tag"><i class="fas fa-futbol"></i> Soccer</span>
-                        <span class="interest-tag"><i class="fas fa-basketball-ball"></i> Basketball</span>
-                        <span class="interest-tag"><i class="fas fa-shoe-prints"></i> Sneaker Collector</span>
-                        <span class="interest-tag"><i class="fas fa-wrench"></i> DIY & Tech Hardware</span>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="heroDownloadBtn">
+                            <i class="fas fa-file-pdf"></i>
+                            Download CV (PDF)
+                        </button>
+                        <a href="#contact" class="btn-secondary">Get in touch <i class="fas fa-arrow-right"></i></a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- GitHub Live Dashboard Section -->
-        <section id="github" class="section-padding github-section">
-            <div class="container">
-                <div class="section-header reveal-fade">
-                    <span class="section-tag">// REAL-TIME DATA HUB</span>
-                    <h2 class="section-title">GitHub <span class="gradient-text">Live Dashboard</span></h2>
-                    <p class="section-subtitle">Auto-synchronized live metrics via GitHub REST API</p>
-                </div>
-
-                <div class="github-dashboard-grid">
-                    <!-- Profile Overview Card -->
-                    <div class="github-profile-card glassmorphism reveal-slide-left" id="githubProfileCard">
-                        <div class="profile-skeleton">Loading GitHub Profile...</div>
-                    </div>
-
-                    <!-- Statistics & Language Breakdown -->
-                    <div class="github-stats-container reveal-slide-right">
-                        <div class="github-metrics-grid">
-                            <div class="metric-box glassmorphism">
-                                <i class="fas fa-code-branch"></i>
-                                <span class="metric-val" id="ghMetricRepos">--</span>
-                                <span class="metric-lbl">Public Repos</span>
-                            </div>
-                            <div class="metric-box glassmorphism">
-                                <i class="fas fa-users"></i>
-                                <span class="metric-val" id="ghMetricFollowers">--</span>
-                                <span class="metric-lbl">Followers</span>
-                            </div>
-                            <div class="metric-box glassmorphism">
-                                <i class="fas fa-user-friends"></i>
-                                <span class="metric-val" id="ghMetricFollowing">--</span>
-                                <span class="metric-lbl">Following</span>
-                            </div>
-                            <div class="metric-box glassmorphism">
-                                <i class="fas fa-star"></i>
-                                <span class="metric-val" id="ghMetricStars">--</span>
-                                <span class="metric-lbl">Total Stars</span>
-                            </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">Final Year</span>
+                            <span class="stat-label">BSc Information Technology</span>
                         </div>
-
-                        <!-- Language Distribution Breakdown -->
-                        <div class="languages-box glassmorphism">
-                            <h3><i class="fas fa-chart-pie"></i> Primary Languages Distribution</h3>
-                            <div id="languagesDistribution" class="languages-bar-wrap">
-                                <div class="loading-spinner"></div>
-                            </div>
+                        <div class="stat">
+                            <span class="stat-number">63.46%</span>
+                            <span class="stat-label">Current GPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">Programming Languages & Tools</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section (Live GitHub Repositories Sync) -->
-        <section id="projects" class="section-padding">
-            <div class="container">
-                <div class="section-header reveal-fade">
-                    <span class="section-tag">// PORTFOLIO SHOWCASE</span>
-                    <h2 class="section-title">Live <span class="gradient-text">Repositories & Projects</span></h2>
-                    <p class="section-subtitle">Automatically fetched & sorted from @Bigdugg23 GitHub account</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">Dedicated & <span class="highlight">Dynamic</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Skilled in SQL, Power BI, Tableau, and Excel, with a passion for turning raw data into clear, actionable insights through data cleaning, visualisation, and dashboard development.</p>
                 </div>
+                <div class="about-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Front-End Development</h3>
+                    <p>Builds intuitive, responsive web applications with HTML5, CSS3, and JavaScript, backed by a solid foundation in Python, Java, C#, and C++.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Marketing Expertise</h3>
+                    <p>Brand Ambassador for Frenzyy Clothing with proven promotional abilities and customer engagement strategies across digital and social platforms.</p>
+                </div>
+            </div>
+            <div class="about-bio">
+                <p>Final-year Bachelor of Science in Information Technology student at North-West University with a strong interest in Data Analytics and Front-End Development. Passionate about turning raw data into meaningful insights and building intuitive, responsive web applications. Skilled in Python, SQL, Power BI, Tableau, Java, C#, C++, HTML, CSS, and Git/GitHub, with a solid academic foundation in databases, artificial intelligence, decision support systems, and computer networks. Seeking an internship or graduate opportunity to contribute analytical thinking, technical skills, and a commitment to continuous learning.</p>
+            </div>
+        </div>
+    </section>
 
-                <!-- Controls: Filters, Search & Sorting -->
-                <div class="projects-controls-wrapper glassmorphism reveal-scale">
-                    <div class="search-box">
-                        <i class="fas fa-search"></i>
-                        <input type="text" id="repoSearchInput" placeholder="Search repositories by name, language, or topic..." aria-label="Search Repositories">
-                    </div>
-
-                    <div class="filter-sort-group">
-                        <div class="select-dropdown">
-                            <label for="languageFilterSelect"><i class="fas fa-filter"></i> Language:</label>
-                            <select id="languageFilterSelect">
-                                <option value="all">All Languages</option>
-                            </select>
+    <!-- Education Section -->
+    <section id="education" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academics</span>
+                <h2 class="section-title">Education & <span class="highlight">Coursework</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <span class="company">North-West University</span>
                         </div>
-
-                        <div class="select-dropdown">
-                            <label for="sortOrderSelect"><i class="fas fa-sort"></i> Sort By:</label>
-                            <select id="sortOrderSelect">
-                                <option value="updated">Recently Updated</option>
-                                <option value="stars">Most Stars</option>
-                                <option value="newest">Newest Created</option>
-                                <option value="oldest">Oldest Created</option>
-                                <option value="name">Alphabetical (A-Z)</option>
-                            </select>
-                        </div>
+                        <p style="color: var(--text-secondary); margin-top: 0.5rem;">Current Qualification GPA: 63.46%</p>
+                        <ul>
+                            <li>Artificial Intelligence</li>
+                            <li>Data Analytics</li>
+                            <li>Decision Support Systems</li>
+                            <li>Databases & Advanced Databases</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Information Security</li>
+                            <li>Computer Networks</li>
+                            <li>System Analysis & Design</li>
+                            <li>User Interface Programming</li>
+                        </ul>
                     </div>
                 </div>
-
-                <!-- Live Repos Grid -->
-                <div id="projectsGrid" class="projects-grid">
-                    <div class="projects-loading-state">
-                        <div class="loading-spinner"></div>
-                        <p>Synchronizing with GitHub REST API...</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017-2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Matriculation</h3>
+                            <span class="company">Phumulani Secondary School</span>
+                        </div>
+                        <ul>
+                            <li>Completed secondary education with strong foundation</li>
+                            <li>Active in sports and extracurricular activities</li>
+                            <li>Developed discipline and teamwork fundamentals</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section with Animated Progress Bars -->
-        <section id="skills" class="section-padding">
-            <div class="container">
-                <div class="section-header reveal-fade">
-                    <span class="section-tag">// TECH STACK & COMPETENCIES</span>
-                    <h2 class="section-title">Technical <span class="gradient-text">Mastery</span></h2>
-                    <p class="section-subtitle">Real-time skill levels and domain experience</p>
-                </div>
-
-                <div class="skills-main-grid">
-                    <!-- Programming Languages -->
-                    <div class="skill-category-card glassmorphism reveal-slide-left">
-                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Python (Data & Automation)</span><span class="skill-percent">90%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="90%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>SQL / Oracle SQL</span><span class="skill-percent">88%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="88%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>HTML5 / CSS3</span><span class="skill-percent">92%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="92%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>JavaScript (Vanilla ES6+)</span><span class="skill-percent">85%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="85%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Java / C# / C++</span><span class="skill-percent">80%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="80%"></div></div>
-                            </div>
-                        </div>
+    <!-- Projects Section -->
+    <section id="projects" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Selected Work</span>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Personal Portfolio Website</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Developed and deployed a responsive personal portfolio website to showcase projects, technical skills, and professional experience.</p>
+                    <div class="skills-list">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">GitHub Pages</span>
                     </div>
-
-                    <!-- Data Analytics & Tools -->
-                    <div class="skill-category-card glassmorphism reveal-slide-right">
-                        <h3><i class="fas fa-chart-pie"></i> Analytics & Business Intelligence</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Power BI & Dashboarding</span><span class="skill-percent">88%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="88%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Tableau Visualizations</span><span class="skill-percent">82%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="82%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Advanced Microsoft Excel</span><span class="skill-percent">90%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="90%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Cisco Networking & Packet Tracer</span><span class="skill-percent">85%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="85%"></div></div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Git / GitHub Workflows</span><span class="skill-percent">90%</span></div>
-                                <div class="progress-track"><div class="progress-fill" data-progress="90%"></div></div>
-                            </div>
-                        </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-network-wired"></i> Enterprise Network Design</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Designed and configured a secure enterprise network using Cisco Packet Tracer, implementing VLANs, DHCP, routing, and access control lists (ACLs).</p>
+                    <div class="skills-list">
+                        <span class="skill-badge">Cisco Packet Tracer</span>
+                        <span class="skill-badge">Networking</span>
+                        <span class="skill-badge">Security</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Database & Decision Support Projects</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Designed relational databases, developed SQL queries, and applied decision support techniques to analyse business problems and support data-driven decisions.</p>
+                    <div class="skills-list">
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">Database Design</span>
+                        <span class="skill-badge">Decision Support</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Vertical Timeline (Education & Career) -->
-        <section id="timeline" class="section-padding">
-            <div class="container">
-                <div class="section-header reveal-fade">
-                    <span class="section-tag">// CHRONOLOGY</span>
-                    <h2 class="section-title">Education & <span class="gradient-text">Experience</span></h2>
-                    <p class="section-subtitle">Milestones shaping my engineering path</p>
-                </div>
-
-                <div class="vertical-timeline-container">
-                    <div class="timeline-progress-line" id="timelineProgressLine"></div>
-
-                    <!-- Timeline Item 1 -->
-                    <div class="timeline-node reveal-slide-left">
-                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="timeline-content-card glassmorphism tilt-card">
-                            <span class="timeline-period">2023 - PRESENT</span>
-                            <h3>BSc in Information Technology</h3>
-                            <h4 class="company-name">North-West University</h4>
-                            <p>Current Qualification GPA: 63.46%. Focused on Artificial Intelligence, Advanced Databases, Decision Support Systems, Data Structures, Networks, and Systems Analysis.</p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 2 -->
-                    <div class="timeline-node reveal-slide-right">
-                        <div class="timeline-icon"><i class="fas fa-tshirt"></i></div>
-                        <div class="timeline-content-card glassmorphism tilt-card">
-                            <span class="timeline-period">PRESENT</span>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Professional Journey</span>
+                <h2 class="section-title">Work & <span class="highlight">Leadership</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Current</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
                             <h3>Brand Ambassador</h3>
-                            <h4 class="company-name">Frenzyy Clothing Brand</h4>
-                            <p>Leading promotional marketing initiatives, community engagement, brand messaging, customer interaction, and digital strategy expansion.</p>
+                            <span class="company">Frenzyy Clothing Brand</span>
                         </div>
+                        <ul>
+                            <li>Represent the Frenzyy brand through promotional campaigns and community engagement</li>
+                            <li>Promote products across digital and social platforms to increase brand awareness</li>
+                            <li>Build relationships with customers and communicate the brand's values professionally</li>
+                            <li>Support marketing initiatives and contribute ideas for brand growth</li>
+                        </ul>
                     </div>
-
-                    <!-- Timeline Item 3 -->
-                    <div class="timeline-node reveal-slide-left">
-                        <div class="timeline-icon"><i class="fas fa-shield-alt"></i></div>
-                        <div class="timeline-content-card glassmorphism tilt-card">
-                            <span class="timeline-period">CERTIFICATION</span>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Certification</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
                             <h3>Introduction to Cybersecurity</h3>
-                            <h4 class="company-name">Cisco Networking Academy</h4>
-                            <p>Mastered foundational threat intelligence, network defense strategies, encryption standards, and digital security architecture.</p>
+                            <span class="company">Certification</span>
                         </div>
-                    </div>
-
-                    <!-- Timeline Item 4 -->
-                    <div class="timeline-node reveal-slide-right">
-                        <div class="timeline-icon"><i class="fas fa-school"></i></div>
-                        <div class="timeline-content-card glassmorphism tilt-card">
-                            <span class="timeline-period">2017 - 2021</span>
-                            <h3>Matriculation Secondary Education</h3>
-                            <h4 class="company-name">Phumulani Secondary School</h4>
-                            <p>Graduated with strong foundations in mathematics and science. Active in leadership and sports teams.</p>
-                        </div>
+                        <ul>
+                            <li>Completed foundational coursework in cybersecurity principles and best practices</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Interactive Glass Contact Section -->
-        <section id="contact" class="section-padding">
-            <div class="container">
-                <div class="section-header reveal-fade">
-                    <span class="section-tag">// TRANSMISSION HUB</span>
-                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-                    <p class="section-subtitle">Let's discuss projects, opportunities, or technical collaborations</p>
-                </div>
-
-                <div class="contact-grid">
-                    <!-- Contact Cards -->
-                    <div class="contact-info-list reveal-slide-left">
-                        <div class="contact-card glassmorphism tilt-card">
-                            <i class="fas fa-envelope-open-text"></i>
-                            <div>
-                                <h4>Email Address</h4>
-                                <a href="mailto:phethotsoeu1@gmail.com">phethotsoeu1@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card glassmorphism tilt-card">
-                            <i class="fas fa-phone-volume"></i>
-                            <div>
-                                <h4>Phone Contact</h4>
-                                <a href="tel:+27682555140">+27 68 255 5140</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card glassmorphism tilt-card">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Katlehong South, Gauteng, South Africa</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-card glassmorphism tilt-card">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn Profile</h4>
-                                <a href="https://www.linkedin.com/in/phetho-tsoeu-536b01363/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-                            </div>
-                        </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Technical & <span class="highlight">Professional</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">C#</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript (Learning)</span>
                     </div>
-
-                    <!-- Interactive Form Card -->
-                    <div class="contact-form-card glassmorphism reveal-slide-right">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" id="contactName" required placeholder=" ">
-                                <label for="contactName">Your Name</label>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="email" id="contactEmail" required placeholder=" ">
-                                <label for="contactEmail">Your Email</label>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" id="contactSubject" required placeholder=" ">
-                                <label for="contactSubject">Subject</label>
-                            </div>
-
-                            <div class="form-group">
-                                <textarea id="contactMessage" rows="5" required placeholder=" "></textarea>
-                                <label for="contactMessage">Your Message</label>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-block magnetic">
-                                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-chart-pie"></i> Data Analytics & BI</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">Microsoft Excel</span>
+                        <span class="skill-badge">Power BI</span>
+                        <span class="skill-badge">Tableau</span>
+                        <span class="skill-badge">Apache Kafka</span>
+                        <span class="skill-badge">Data Cleaning</span>
+                        <span class="skill-badge">Data Visualisation</span>
+                        <span class="skill-badge">Dashboard Development</span>
+                        <span class="skill-badge">Database Design</span>
+                        <span class="skill-badge">Business Intelligence Fundamentals</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Front-End Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">Responsive Web Design</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Visual Studio Code</span>
+                        <span class="skill-badge">Visual Studio</span>
+                        <span class="skill-badge">Cisco Packet Tracer</span>
+                        <span class="skill-badge">GitHub Pages</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Data Analysis</span>
+                        <span class="skill-badge">Analytical Thinking</span>
+                        <span class="skill-badge">Problem Solving</span>
+                        <span class="skill-badge">Communication</span>
+                        <span class="skill-badge">Teamwork</span>
+                        <span class="skill-badge">Leadership</span>
+                        <span class="skill-badge">Adaptability</span>
+                        <span class="skill-badge">Time Management</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Sesotho (Native)</span>
+                        <span class="skill-badge">English (Professional)</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <!-- Interests Section -->
+    <section class="interests">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Beyond Tech</span>
+                <h2 class="section-title">Passions & <span class="highlight">Hobbies</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-volleyball-ball"></i>
+                    <h3>Volleyball</h3>
+                    <p>Team Captain leading to 2024 tournament victory</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-futbol"></i>
+                    <h3>Soccer</h3>
+                    <p>Regular play developing teamwork & discipline</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-basketball-ball"></i>
+                    <h3>Basketball</h3>
+                    <p>Quick decision-making & perseverance</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                    <h3>DIY & Maintenance</h3>
+                    <p>Hands-on problem solving</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-shoe-prints"></i>
+                    <h3>Sneaker Collecting</h3>
+                    <p>Attention to detail & design appreciation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+27682555140">+27 68 255 5140</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:phethotsoeu1@gmail.com">phethotsoeu1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Katlehong South, Gauteng<br>South Africa</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <h4>Driver's Licence</h4>
+                            <p>Code 10 (C1)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Bigdugg23" target="_blank">github.com/Bigdugg23</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Portfolio</h4>
+                            <a href="https://bigdugg23.github.io" target="_blank">bigdugg23.github.io</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/phetho-tsoeu-536b01363/" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer-wrapper">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <a href="#home" class="logo">BIGDUGG<span class="neon-dot">.</span></a>
-                <p>Designed & Engineered with Vanilla JS, HTML5, & CSS3. Auto-Synced with GitHub API.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Phetho Tsoeu</span>
+                    <p>Aspiring Data Analyst & Front-End Developer<br>North-West University</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/phetho-tsoeu-536b01363/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Bigdugg23" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://bigdugg23.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
             </div>
-
-            <div class="footer-socials">
-                <a href="https://github.com/Bigdugg23" target="_blank" rel="noopener" class="social-link magnetic" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/phetho-tsoeu-536b01363/" target="_blank" rel="noopener" class="social-link magnetic" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:phethotsoeu1@gmail.com" class="social-link magnetic" title="Email"><i class="fas fa-envelope"></i></a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Phetho Tsoeu. All rights reserved. Built with <i class="fas fa-heart"></i> for excellence.</p>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Phetho Tsoeu (Bigdugg23). All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Back to Top Floating Action Button -->
-    <button class="back-to-top-btn magnetic" id="backToTopBtn" aria-label="Scroll Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 
     <script src="script.js"></script>
 </body>
