@@ -43,7 +43,7 @@ a{color:inherit}
 
 /* Hero */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:80px;color:#fff;
-  background:url('../IMG_8551.jpeg') center/cover,radial-gradient(circle at 20% 20%,#2b2415,#0a0c10 60%)}
+  background:url('../assets/IMG_8551.jpeg') center/cover,radial-gradient(circle at 20% 20%,#2b2415,#0a0c10 60%)}
 .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.62)}
 .hero .container{position:relative;width:100%}
 .hero-content{text-align:center;max-width:860px;margin:0 auto}
