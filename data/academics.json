@@ -1,0 +1,93 @@
+{
+  "qualification": "Bachelor of Science in Information Technology",
+  "institution": "North-West University (Vanderbijlpark Campus)",
+  "nqf": "NQF Level 7",
+  "asAt": "28 October 2026",
+  "gpa": 63.46,
+  "creditsEarned": 360,
+  "creditsTotal": 392,
+  "yearGpa": [
+    { "year": "2023", "gpa": 60.85 },
+    { "year": "2024", "gpa": 62.40 },
+    { "year": "2025", "gpa": 62.46 },
+    { "year": "2026", "gpa": 58.33 }
+  ],
+  "modules": [
+    { "year": 2023, "code": "STTN111", "name": "Descriptive Statistics", "credits": 12, "mark": 62 },
+    { "year": 2023, "code": "MTHS113", "name": "Basic Mathematical Techniques", "credits": 12, "mark": 65 },
+    { "year": 2023, "code": "BMAN111", "name": "Introduction to Business Management", "credits": 12, "mark": 60 },
+    { "year": 2023, "code": "ACCS111", "name": "Financial Accountancy", "credits": 16, "mark": 60 },
+    { "year": 2023, "code": "CMPG111", "name": "Introduction to Computing and Programming", "credits": 12, "mark": 53 },
+    { "year": 2023, "code": "STTN121", "name": "Introductory Statistical Inference", "credits": 12, "mark": 64 },
+    { "year": 2023, "code": "ACCS121", "name": "Financial Accounting", "credits": 16, "mark": 60 },
+    { "year": 2023, "code": "CMPG122", "name": "User Interface Programming I", "credits": 12, "mark": 64 },
+    { "year": 2023, "code": "CMPG121", "name": "Structured Programming", "credits": 12, "mark": 61 },
+    { "year": 2023, "code": "ALDE122", "name": "Academic Literacy Development", "credits": 12, "mark": 71 },
+
+    { "year": 2024, "code": "CMPG211", "name": "Object Oriented Programming", "credits": 16, "mark": 72 },
+    { "year": 2024, "code": "CMPG212", "name": "Apps and Advanced User Interface Programming", "credits": 8, "mark": 58 },
+    { "year": 2024, "code": "CMPG213", "name": "System Analysis and Design 1", "credits": 16, "mark": 57 },
+    { "year": 2024, "code": "CMPG214", "name": "Communication Skills", "credits": 8, "mark": 74 },
+    { "year": 2024, "code": "CMPG215", "name": "Information Security", "credits": 8, "mark": 63 },
+    { "year": 2024, "code": "CMPG221", "name": "Data Structures and Algorithms", "credits": 8, "mark": 65 },
+    { "year": 2024, "code": "CMPG222", "name": "Data Analytics 2", "credits": 8, "mark": 73 },
+    { "year": 2024, "code": "CMPG223", "name": "System Analysis and Design 2", "credits": 16, "mark": 50 },
+    { "year": 2024, "code": "BMAN223", "name": "Problem Solving for Managers", "credits": 16, "mark": 61 },
+    { "year": 2024, "code": "MTHS225", "name": "Discrete Mathematics", "credits": 8, "mark": 55 },
+    { "year": 2024, "code": "WVNS211", "name": "Understanding the Natural World (1)", "credits": 12, "mark": 77 },
+    { "year": 2024, "code": "WVNS221", "name": "Understanding the Natural World (2)", "credits": 12, "mark": 77 },
+
+    { "year": 2025, "code": "CMPG311", "name": "Databases", "credits": 16, "mark": 60 },
+    { "year": 2025, "code": "CMPG312", "name": "Decision Support Systems 1", "credits": 16, "mark": 73 },
+    { "year": 2025, "code": "CMPG321", "name": "Advanced Databases", "credits": 16, "mark": 69 },
+    { "year": 2025, "code": "CMPG322", "name": "Decision Support Systems 2", "credits": 16, "mark": 64 },
+
+    { "year": 2026, "code": "CMPG313", "name": "Artificial Intelligence", "credits": 16, "mark": 52 },
+    { "year": 2026, "code": "CMPG315", "name": "Computer Networks", "credits": 16, "mark": 63 },
+    { "year": 2026, "code": "CMPG323", "name": "IT Developments", "credits": 16, "mark": null, "status": "in-progress" },
+    { "year": 2026, "code": "CMPG324", "name": "Operating Systems", "credits": 16, "mark": null, "status": "in-progress" }
+  ],
+  "skillGroups": [
+    {
+      "title": "Data & Databases",
+      "icon": "fa-database",
+      "skills": [
+        { "name": "SQL & Relational Design", "from": ["CMPG311", "CMPG321"] },
+        { "name": "Data Analytics", "from": ["CMPG222", "STTN111", "STTN121"] },
+        { "name": "Decision Support Systems", "from": ["CMPG312", "CMPG322"] },
+        { "name": "Descriptive & Inferential Statistics", "from": ["STTN111", "STTN121"] }
+      ]
+    },
+    {
+      "title": "Software Engineering",
+      "icon": "fa-code",
+      "skills": [
+        { "name": "Object-Oriented Programming", "from": ["CMPG211"] },
+        { "name": "Structured Programming", "from": ["CMPG121", "CMPG111"] },
+        { "name": "Data Structures & Algorithms", "from": ["CMPG221"] },
+        { "name": "UI & App Programming", "from": ["CMPG122", "CMPG212"] },
+        { "name": "Systems Analysis & Design", "from": ["CMPG213", "CMPG223"] }
+      ]
+    },
+    {
+      "title": "Systems, Networks & Security",
+      "icon": "fa-network-wired",
+      "skills": [
+        { "name": "Computer Networks", "from": ["CMPG315"] },
+        { "name": "Information Security", "from": ["CMPG215"] },
+        { "name": "Operating Systems", "from": ["CMPG324"], "inProgress": true },
+        { "name": "Artificial Intelligence", "from": ["CMPG313"] }
+      ]
+    },
+    {
+      "title": "Business & Communication",
+      "icon": "fa-briefcase",
+      "skills": [
+        { "name": "Business Management", "from": ["BMAN111", "BMAN223"] },
+        { "name": "Financial Accounting", "from": ["ACCS111", "ACCS121"] },
+        { "name": "Professional Communication", "from": ["CMPG214", "ALDE122"] },
+        { "name": "Discrete Mathematics", "from": ["MTHS225"] }
+      ]
+    }
+  ]
+}

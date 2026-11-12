@@ -1,0 +1,23 @@
+{
+  "_help": "Add certificates here by hand. Cisco badges are merged in automatically from data/credly-badges.json once credlyUsername is set in js/config.js and the GitHub Action runs.",
+  "certificates": [
+    {
+      "name": "Introduction to Cybersecurity",
+      "issuer": "Cisco Networking Academy",
+      "date": "2025",
+      "category": "Cisco",
+      "description": "Foundational cybersecurity concepts: threats, data protection and safe online practice.",
+      "url": "",
+      "image": ""
+    },
+    {
+      "name": "Volleyball Tournament Certificate",
+      "issuer": "Sports achievement",
+      "date": "2024",
+      "category": "Leadership",
+      "description": "Team captain for the 2024 tournament-winning side.",
+      "url": "",
+      "image": ""
+    }
+  ]
+}
