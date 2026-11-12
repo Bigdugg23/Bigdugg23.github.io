@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Projects · Phetho Tsoeu</title>
+<meta name="description" content="Live GitHub repositories, language stats and featured academic projects.">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head><body>
+<header class="page-hero"><div class="container"><span class="section-tag">Selected Work</span><h1 class="section-title" style="font-size:clamp(2rem,5vw,3rem)">Projects &amp; <span class="highlight">Repositories</span></h1><div class="section-divider"></div><p>Every public repository on my GitHub, loaded live - a new project appears here the moment I create it.</p></div></header>
+ 
+<main id="main">
+<section style="padding-top:1rem"><div class="container">
+  <div class="stats-row" id="ghStats"></div>
+  <div class="card"><h3>Languages across my repositories</h3><div class="langbar" id="langBar"></div><div class="legend" id="langLegend"></div></div>
+</div></section>
+ 
+<section class="alt"><div class="container"><div class="section-header reveal"><span class="section-tag">Live from GitHub</span><h2 class="section-title">My <span class="highlight">Repositories</span></h2><div class="section-divider"></div></div>
+  <div class="controls">
+    <input class="search" id="repoSearch" type="search" placeholder="Search repositories…" aria-label="Search repositories">
+    <select class="search" id="langFilter" aria-label="Filter by language"><option value="">All languages</option></select>
+    <select class="search" id="repoSort" aria-label="Sort"><option value="updated">Recently updated</option><option value="stars">Most starred</option><option value="name">Name A-Z</option></select>
+  </div>
+  <div class="grid" id="repoGrid"></div>
+</div></section>
+ 
+<section><div class="container"><div class="section-header reveal"><span class="section-tag">Coursework &amp; teams</span><h2 class="section-title">Featured <span class="highlight">Projects</span></h2><div class="section-divider"></div></div>
+  <div class="grid">
+    <div class="card reveal"><h3><i class="fas fa-handshake" style="color:var(--highlight)"></i> Conference Management Tool</h3><p>Team project: backend development with C# and ASP.NET Core, including submission-related API operations.</p><div class="badges" style="margin-top:1rem"><span class="badge">C#</span><span class="badge">ASP.NET Core</span><span class="badge">REST API</span></div></div>
+    <div class="card reveal"><h3><i class="fas fa-microchip" style="color:var(--highlight)"></i> CPU Scheduling Simulator</h3><p>Group operating-systems simulation studying scheduling algorithms and their performance measures.</p><div class="badges" style="margin-top:1rem"><span class="badge">Operating Systems</span><span class="badge">Algorithms</span></div></div>
+    <div class="card reveal"><h3><i class="fas fa-network-wired" style="color:var(--highlight)"></i> Enterprise Network Design</h3><p>Designed and configured a secure enterprise network: VLANs, DHCP, routing and access control lists.</p><div class="badges" style="margin-top:1rem"><span class="badge">Cisco Packet Tracer</span><span class="badge">Networking</span><span class="badge">Security</span></div></div>
+    <div class="card reveal"><h3><i class="fas fa-database" style="color:var(--highlight)"></i> Database &amp; Decision Support</h3><p>Relational database design, SQL queries and decision-support techniques applied to business problems.</p><div class="badges" style="margin-top:1rem"><span class="badge">SQL</span><span class="badge">Database Design</span><span class="badge">Decision Support</span></div></div>
+    <div class="card reveal"><h3><i class="fas fa-laptop-code" style="color:var(--highlight)"></i> This Portfolio</h3><p>Responsive multi-page site with dark mode, live GitHub data, auto-updating certificates and in-browser CV generation.</p><div class="badges" style="margin-top:1rem"><span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span><span class="badge">GitHub Pages</span></div></div>
+  </div>
+</div></section>
+ 
+<section class="alt"><div class="container"><div class="section-header reveal"><span class="section-tag">Consistency</span><h2 class="section-title">Contribution <span class="highlight">Activity</span></h2><div class="section-divider"></div></div>
+  <div class="contrib reveal"><img id="contribImg" alt="GitHub contribution graph" loading="lazy"></div>
+</div></section>
+</main>
+<script src="js/config.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cv.js"></script>
+<script src="js/github.js"></script>
+<script src="js/projects-page.js"></script>
+</body></html>
