@@ -1,12 +1,25 @@
 [
   {
+    "name": "Frenzyy",
+    "html_url": "https://github.com/Bigdugg23/Frenzyy",
+    "description": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-13T07:00:09Z",
+    "homepage": "https://bigdugg23.github.io/Frenzyy/",
+    "topics": [],
+    "fork": false,
+    "archived": false
+  },
+  {
     "name": "Bigdugg23.github.io",
     "html_url": "https://github.com/Bigdugg23/Bigdugg23.github.io",
     "description": "Web portfolio",
     "language": "HTML",
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-12T14:10:43Z",
+    "pushed_at": "2026-11-12T14:10:57Z",
     "homepage": null,
     "topics": [],
     "fork": false,
@@ -60,19 +73,6 @@
     "forks_count": 0,
     "pushed_at": "2026-06-18T20:34:14Z",
     "homepage": "https://bigdugg23.github.io/Biggie-apology/",
-    "topics": [],
-    "fork": false,
-    "archived": false
-  },
-  {
-    "name": "Frenzyy",
-    "html_url": "https://github.com/Bigdugg23/Frenzyy",
-    "description": null,
-    "language": "HTML",
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2026-06-18T20:26:53Z",
-    "homepage": "https://bigdugg23.github.io/Frenzyy/",
     "topics": [],
     "fork": false,
     "archived": false
