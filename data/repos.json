@@ -1,5 +1,18 @@
 [
   {
+    "name": "Bigdugg23.github.io",
+    "html_url": "https://github.com/Bigdugg23/Bigdugg23.github.io",
+    "description": "Web portfolio",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-13T13:21:50Z",
+    "homepage": null,
+    "topics": [],
+    "fork": false,
+    "archived": false
+  },
+  {
     "name": "Frenzyy",
     "html_url": "https://github.com/Bigdugg23/Frenzyy",
     "description": null,
@@ -8,19 +21,6 @@
     "forks_count": 0,
     "pushed_at": "2026-11-13T07:00:09Z",
     "homepage": "https://bigdugg23.github.io/Frenzyy/",
-    "topics": [],
-    "fork": false,
-    "archived": false
-  },
-  {
-    "name": "Bigdugg23.github.io",
-    "html_url": "https://github.com/Bigdugg23/Bigdugg23.github.io",
-    "description": "Web portfolio",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2026-11-12T14:10:57Z",
-    "homepage": null,
     "topics": [],
     "fork": false,
     "archived": false
